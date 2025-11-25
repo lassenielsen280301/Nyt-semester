@@ -7,6 +7,8 @@ public class MovingPlatform : MonoBehaviour
     public float downDistance = 3f;     // How far down it drops
     public float moveSpeed = 2f;        // Movement speed
     public float waitTime = 1f;         // Pause at bottom
+    public float waitAtTop = 1f;    //hej
+    
 
     [Header("Platform Tags")]
     public string[] rideableTags = { "PlatformA", "PlatformB" }; // Platforms Player2 can ride
@@ -16,6 +18,9 @@ public class MovingPlatform : MonoBehaviour
     private int step = 0;               // Step in movement sequence
     private bool activated = false;
     private float waitTimer = 0f;
+    private float waitTopTimer = 0f;    //hej
+    private int nextStepAfterTop = 0; //hej
+
 
     private Vector3 lastPosition;
 
@@ -40,6 +45,15 @@ public class MovingPlatform : MonoBehaviour
         {
             case 0: // Move start → target
                 MoveTowards(targetPosition.position, 1);
+                break;
+
+            case 5:
+                waitTopTimer += Time.deltaTime;
+                if (waitTopTimer >= waitAtTop)
+                {
+                    waitTopTimer = 0f;
+                    step = nextStepAfterTop; // fortsæt hvor du skal hen bagefter
+                }
                 break;
 
             case 1: // Move target → down
@@ -81,7 +95,19 @@ public class MovingPlatform : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, destination, moveSpeed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, destination) < 0.01f)
-            step = nextStep;
+        {
+            // Første gang: ingen pause → gå direkte videre
+            if (destination == targetPosition.position && step == 3)
+            {
+                nextStepAfterTop = nextStep;
+                step = 5; // vent ved toppen
+            }
+            else
+            {
+                step = nextStep;
+            }
+        }
+          
     }
 
     private void MoveRidingPlayers(Vector3 delta)

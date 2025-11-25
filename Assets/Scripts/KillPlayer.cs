@@ -1,23 +1,24 @@
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KillPlayer : MonoBehaviour
 {
     // KillPlayers
-    public GameObject player1;
-    public GameObject player2;
-    public Transform respawnPoint1;
-    public Transform respawnPoint2;
+    public GameObject Circle;
+    public GameObject Square;
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.CompareTag("Player1"))
+        if (collision.gameObject.CompareTag("Circle") || collision.gameObject.CompareTag("Square"))
         {
-            player1.transform.position = respawnPoint1.position;
+            Dead();
         }
-        if (other.gameObject.CompareTag("Player2"))
-        {
-            player2.transform.position = respawnPoint2.position;
-        }
+    }
+    
+    void Dead()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
