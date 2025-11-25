@@ -33,6 +33,31 @@ public class LevelSelectController : MonoBehaviour
         SceneManager.LoadScene("Level 5");
     }
 
+    public void OnLvl6Click()
+    {
+        SceneManager.LoadScene("Level 6");
+    }
+
+    public void OnLvl7Click()
+    {
+        SceneManager.LoadScene("Level 7");
+    }
+
+    public void OnLvl8Click()
+    {
+        SceneManager.LoadScene("Level 8");
+    }
+
+    public void OnLvl9Click()
+    {
+        SceneManager.LoadScene("Level 9");
+    }
+
+    public void OnLvl10Click()
+    {
+        SceneManager.LoadScene("Level 10");
+    }
+
     public void OnBackClick()
     {
         SceneManager.LoadScene("(Main menu) Stampe");
