@@ -19,6 +19,8 @@ TagManager:
   - Square
   - PlatformA
   - PlatformB
+  - PlatformC
+  - PlatformD
   layers:
   - Default
   - TransparentFX

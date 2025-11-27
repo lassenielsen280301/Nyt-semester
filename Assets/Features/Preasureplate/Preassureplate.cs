@@ -54,4 +54,3 @@ public class PressurePlate : MonoBehaviour
         return col.CompareTag("Player2") || col.CompareTag("Box");
     }
 }
-
