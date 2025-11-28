@@ -1,19 +1,21 @@
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BoxTriggerPoint : MonoBehaviour
+public class KillPlayer : MonoBehaviour
 {
-    public Rigidbody2D boxRigidbody;
+    // KillPlayers
+    public GameObject Circle;
+    public GameObject Square;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Circle"))
+        if (collision.gameObject.CompareTag("Circle") || collision.gameObject.CompareTag("Square"))
         {
-           
             Dead();
-            
         }
     }
+    
     void Dead()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);

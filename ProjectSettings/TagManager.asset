@@ -19,8 +19,7 @@ TagManager:
   - Square
   - PlatformA
   - PlatformB
-  - PlatformC
-  - PlatformD
+  - chain
   layers:
   - Default
   - TransparentFX
@@ -39,7 +38,7 @@ TagManager:
   - LavaPit
   - Breakable
   - Preassure plate
-  - 
+  - chain
   - 
   - 
   - 
