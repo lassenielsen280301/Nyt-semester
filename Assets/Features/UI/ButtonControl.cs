@@ -42,5 +42,10 @@ public class PauseManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene ("(Main menu) Stampe");
+    }
 }
 
