@@ -649,6 +649,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 649719791}
     m_Modifications:
+    - target: {fileID: 3024783676907958373, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
+      propertyPath: nextSceneName
+      value: Level7
+      objectReference: {fileID: 0}
     - target: {fileID: 3237287204057978831, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
       propertyPath: m_Name
       value: SquareExit
@@ -1301,6 +1305,10 @@ PrefabInstance:
     - target: {fileID: 2585796172146143094, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: m_Name
       value: CircleExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5579187604356741396, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
+      propertyPath: nextSceneName
+      value: Level7
       objectReference: {fileID: 0}
     - target: {fileID: 5991493135086262575, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: exitManager
@@ -2650,7 +2658,7 @@ PrefabInstance:
       objectReference: {fileID: 1065438069}
     - target: {fileID: 2275143021831788721, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
       propertyPath: nextSceneName
-      value: Level 3
+      value: Level7
       objectReference: {fileID: 0}
     - target: {fileID: 5352079187958127598, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
       propertyPath: m_Name
@@ -2834,6 +2842,8 @@ MonoBehaviour:
   buttonAnimator: {fileID: 0}
   pressTrigger: E
   maxBoxes: 4
+  gravityScale: 1
+  dropSpeed: 1
 --- !u!61 &1330846639
 BoxCollider2D:
   m_ObjectHideFlags: 0
