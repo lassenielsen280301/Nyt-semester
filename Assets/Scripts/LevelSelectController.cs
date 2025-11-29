@@ -25,37 +25,37 @@ public class LevelSelectController : MonoBehaviour
 
     public void OnLvl4Click()
     {
-        SceneManager.LoadScene("Level 4");
+        SceneManager.LoadScene("Level4");
     }
 
     public void OnLvl5Click()
     {
-        SceneManager.LoadScene("Level5");
+        SceneManager.LoadScene("Level6");
     }
 
     public void OnLvl6Click()
     {
-        SceneManager.LoadScene("Level6");
+        SceneManager.LoadScene("Level7");
     }
 
     public void OnLvl7Click()
     {
-        SceneManager.LoadScene("Level7");
+        SceneManager.LoadScene("Level8");
     }
 
     public void OnLvl8Click()
     {
-        SceneManager.LoadScene("Level 8");
+        SceneManager.LoadScene("Level9");
     }
 
     public void OnLvl9Click()
     {
-        SceneManager.LoadScene("Level 9");
+        SceneManager.LoadScene("Level10");
     }
 
     public void OnLvl10Click()
     {
-        SceneManager.LoadScene("Level 10");
+        SceneManager.LoadScene("Level11");
     }
 
     public void OnBackClick()
