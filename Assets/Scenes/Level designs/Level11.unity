@@ -146,8 +146,8 @@ Transform:
   m_GameObject: {fileID: 16213745}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.52, y: -1.06, z: 9.996099}
-  m_LocalScale: {x: 1.5511785, y: 0.36666998, z: 1}
+  m_LocalPosition: {x: -7.7833, y: -1.06, z: 9.996099}
+  m_LocalScale: {x: 2.0778034, y: 0.36666998, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1842029307}
@@ -2070,11 +2070,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3741861045831558047, guid: 93b7c62c33766b34bb1fac9c6979e406, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.91
+      value: -12.29
       objectReference: {fileID: 0}
     - target: {fileID: 3741861045831558047, guid: 93b7c62c33766b34bb1fac9c6979e406, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.04
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 3741861045831558047, guid: 93b7c62c33766b34bb1fac9c6979e406, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3800,11 +3800,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4185978209807949485, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: waitAtTop
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185978209807949485, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: downDistance
-      value: 4.8
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4185978209807949485, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: waitAtTopTime
@@ -3836,11 +3836,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6511943268201408576, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.79
+      value: 5.86
       objectReference: {fileID: 0}
     - target: {fileID: 6511943268201408576, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.17
+      value: 6.59
       objectReference: {fileID: 0}
     - target: {fileID: 6511943268201408576, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5277,7 +5277,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1067887688680619907, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: m_TagString
-      value: PlatformA
+      value: PlatformB
       objectReference: {fileID: 0}
     - target: {fileID: 4185978209807949485, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: waitTime
@@ -5289,11 +5289,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4185978209807949485, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: waitAtTop
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4185978209807949485, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: downDistance
-      value: 4.8
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4185978209807949485, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: waitAtTopTime
@@ -5325,11 +5325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6511943268201408576, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.24
+      value: -9.38
       objectReference: {fileID: 0}
     - target: {fileID: 6511943268201408576, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.14
+      value: 6.66
       objectReference: {fileID: 0}
     - target: {fileID: 6511943268201408576, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5404,7 +5404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fcba7638fe73247b72f7165c5be503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPlatformTag: PlatformA
+  targetPlatformTag: PlatformB
   activateKey: 303
 --- !u!61 &1294573733
 BoxCollider2D:
@@ -6080,7 +6080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158996114483770058, guid: 1a621d84fbfd24569842bee5a256c367, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.07
+      value: 6.74
       objectReference: {fileID: 0}
     - target: {fileID: 9158996114483770058, guid: 1a621d84fbfd24569842bee5a256c367, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6880,7 +6880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158996114483770058, guid: 1a621d84fbfd24569842bee5a256c367, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.07
+      value: 6.74
       objectReference: {fileID: 0}
     - target: {fileID: 9158996114483770058, guid: 1a621d84fbfd24569842bee5a256c367, type: 3}
       propertyPath: m_LocalPosition.z
