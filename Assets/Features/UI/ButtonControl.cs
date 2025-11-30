@@ -45,7 +45,7 @@ public class PauseManager : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene ("(Main menu) Stampe");
+        SceneManager.LoadScene ("LevelSelect");
     }
 }
 
