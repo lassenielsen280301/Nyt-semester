@@ -1,5 +1,4 @@
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class SpawningScript : MonoBehaviour
 {
@@ -11,7 +10,6 @@ public class SpawningScript : MonoBehaviour
 
     private GameObject circleInstance;
     private GameObject squareInstance;
-
 
     void Start()
     {
@@ -33,3 +31,4 @@ public class SpawningScript : MonoBehaviour
         squareInstance = Instantiate(squarePlayer, squareSpawnPosition.position, squareSpawnPosition.rotation);
     }
 }
+
