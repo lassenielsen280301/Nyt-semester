@@ -780,6 +780,16 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!61 &725432425 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4513296555996970186, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+  m_PrefabInstance: {fileID: 5646063874161071538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &778002729 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6724951447865081599, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+  m_PrefabInstance: {fileID: 5646063874161071538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &788175216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1871,6 +1881,10 @@ PrefabInstance:
       value: 10.34
       objectReference: {fileID: 0}
     - target: {fileID: 2104486898151508900, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: exitManager
+      value: 
+      objectReference: {fileID: 5646063874161071543}
+    - target: {fileID: 2104486898151508900, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       propertyPath: circleInside
       value: 0
       objectReference: {fileID: 0}
@@ -1930,6 +1944,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base Level Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 4093037461429143845, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: circleExit
+      value: 
+      objectReference: {fileID: 778002729}
+    - target: {fileID: 4093037461429143845, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: squareExit
+      value: 
+      objectReference: {fileID: 725432425}
+    - target: {fileID: 4093037461429143845, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: circlePlayer
+      value: 
+      objectReference: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+    - target: {fileID: 4093037461429143845, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: squarePlayer
+      value: 
+      objectReference: {fileID: 4047835749934991700, guid: 31817f468f9cc9840a322c5be60ec6a5, type: 3}
+    - target: {fileID: 4093037461429143845, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: nextSceneName
+      value: Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481476815343204811, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: circleExit
+      value: 
+      objectReference: {fileID: 778002729}
+    - target: {fileID: 4481476815343204811, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: squareExit
+      value: 
+      objectReference: {fileID: 725432425}
+    - target: {fileID: 4481476815343204811, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: circlePlayer
+      value: 
+      objectReference: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+    - target: {fileID: 4481476815343204811, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: squarePlayer
+      value: 
+      objectReference: {fileID: 4047835749934991700, guid: 31817f468f9cc9840a322c5be60ec6a5, type: 3}
+    - target: {fileID: 4481476815343204811, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: nextSceneName
+      value: Level1
+      objectReference: {fileID: 0}
     - target: {fileID: 4632107588697236965, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.39
@@ -1949,6 +2003,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5251243908108093691, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5646063874161071540}
+    - targetCorrespondingSourceObject: {fileID: 5251243908108093691, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5646063874161071543}
   m_SourcePrefab: {fileID: 100100000, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
 --- !u!1 &5646063874161071539 stripped
 GameObject:
@@ -1968,6 +2025,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelNumber: 0
+--- !u!114 &5646063874161071543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5646063874161071539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ccf076da0a3d94bb51ea7f3ccaf168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circlePlayer: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
+  squarePlayer: {fileID: 4047835749934991700, guid: 31817f468f9cc9840a322c5be60ec6a5, type: 3}
+  circleExit: {fileID: 778002729}
+  squareExit: {fileID: 725432425}
+  circleInside: 0
+  squareInside: 0
+  nextSceneName: Level1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
