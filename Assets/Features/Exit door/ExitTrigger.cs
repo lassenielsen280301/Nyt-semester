@@ -16,6 +16,8 @@ public class ExitManager : MonoBehaviour
 
     public string nextSceneName;
 
+    public int currentLevelIndex;
+
     private void Start()
     {
 
@@ -24,9 +26,19 @@ public class ExitManager : MonoBehaviour
     public void CheckBothPlayers()
     {
         if (circleInside == true && squareInside == true)
-        {
-            Debug.Log("JUBII");
-            SceneManager.LoadScene(nextSceneName);
-        }
+      {
+        Debug.Log("JUBII");
+
+        PlayerPrefs.SetInt(
+            "UnlockedLevel",
+            Mathf.Max(PlayerPrefs.GetInt("UnlockedLevel", 0), currentLevelIndex + 1)
+            
+        );
+        Debug.Log("UnlockedLevel is now: " + PlayerPrefs.GetInt("UnlockedLevel", -1));
+
+        PlayerPrefs.Save();
+
+        SceneManager.LoadScene(nextSceneName);
+    }
     }
 }
