@@ -1,61 +1,57 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelSelectController : MonoBehaviour
 {
-    public void onTutorialClick()
+    [Header("Level Buttons (order: 0 = Tutorial, 1 = Level1, etc.)")]
+    public Button[] levelButtons;
+
+    [Header("Scene Names (same order as buttons)")]
+    public string[] levelSceneNames;
+
+    private void Start()
     {
-        SceneManager.LoadScene("Tutorial");
-    }
-    
-    public void OnLvl1Click()
-    {
-        SceneManager.LoadScene("Level1");
+        // Initialize unlocked level (Tutorial = 0)
+        if (!PlayerPrefs.HasKey("UnlockedLevel"))
+        {
+            PlayerPrefs.SetInt("UnlockedLevel", 0);
+            PlayerPrefs.Save();
+        }
+
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 0);
+
+        // Enable only unlocked buttons
+        for (int i = 0; i < levelButtons.Length; i++)
+        {
+            if (levelButtons[i] != null)
+                levelButtons[i].interactable = (i <= unlockedLevel);
+        }
     }
 
-    public void OnLvl2Click()
+    /// <summary>
+    /// Assign this to all buttons OnClick
+    /// </summary>
+    /// <param name="levelIndex">0 = Tutorial, 1 = Level1, etc.</param>
+    public void LoadLevel(int levelIndex)
     {
-        SceneManager.LoadScene("Level2");
-    }
+        if (levelIndex < 0 || levelIndex >= levelSceneNames.Length)
+        {
+            Debug.LogError("Invalid level index!");
+            return;
+        }
 
-    public void OnLvl3Click()
-    {
-        SceneManager.LoadScene("Level3");
-    }
+        int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 0);
 
-    public void OnLvl4Click()
-    {
-        SceneManager.LoadScene("Level4");
-    }
-
-    public void OnLvl5Click()
-    {
-        SceneManager.LoadScene("Level6");
-    }
-
-    public void OnLvl6Click()
-    {
-        SceneManager.LoadScene("Level7");
-    }
-
-    public void OnLvl7Click()
-    {
-        SceneManager.LoadScene("Level8");
-    }
-
-    public void OnLvl8Click()
-    {
-        SceneManager.LoadScene("Level9");
-    }
-
-    public void OnLvl9Click()
-    {
-        SceneManager.LoadScene("Level10");
-    }
-
-    public void OnLvl10Click()
-    {
-        SceneManager.LoadScene("Level11");
+        if (levelIndex <= unlockedLevel)
+        {
+            string sceneName = levelSceneNames[levelIndex];
+            SceneManager.LoadScene(sceneName);
+        }
+        else
+        {
+            Debug.Log("Level locked!");
+        }
     }
 
     public void OnBackClick()
