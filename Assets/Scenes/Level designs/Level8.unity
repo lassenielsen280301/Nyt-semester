@@ -367,6 +367,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPlatformTag: PlatformA
   activateKey: 303
+  buttonSprite: {fileID: 0}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  glowColor: {r: 1, g: 1, b: 1, a: 1.3}
+  pressText: {fileID: 0}
 --- !u!61 &198686659
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1771,8 +1775,29 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1332403554969375074, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       insertIndex: 9
       addedObject: {fileID: 1327257759}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5251243908108093691, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1428737524}
   m_SourcePrefab: {fileID: 100100000, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+--- !u!1 &1428737523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5251243908108093691, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+  m_PrefabInstance: {fileID: 1428737522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1428737524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428737523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa9add45ff2a1416b87bc53487407965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelNumber: 7
 --- !u!1001 &1436500759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2279,6 +2304,10 @@ MonoBehaviour:
   maxBoxes: 4
   gravityScale: 1
   dropSpeed: 1
+  buttonSprite: {fileID: 0}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  glowColor: {r: 1, g: 1, b: 1, a: 1.3}
+  pressText: {fileID: 0}
 --- !u!61 &1987746342
 BoxCollider2D:
   m_ObjectHideFlags: 0
