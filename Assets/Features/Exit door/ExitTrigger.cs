@@ -32,14 +32,12 @@ public class ExitManager : MonoBehaviour
       {
         Debug.Log("JUBII");
 
-<<<<<<< Updated upstream
         PlayerPrefs.SetInt(
             "UnlockedLevel",
             Mathf.Max(PlayerPrefs.GetInt("UnlockedLevel", 0), currentLevelIndex + 1)
             
         );
         Debug.Log("UnlockedLevel is now: " + PlayerPrefs.GetInt("UnlockedLevel", -1));
-=======
             levelComplete.CompleteLevel();
 
             //PlayerPrefs.SetInt(
@@ -50,7 +48,6 @@ public class ExitManager : MonoBehaviour
             //Debug.Log("UnlockedLevel is now: " + PlayerPrefs.GetInt("UnlockedLevel", -1));
         //Debug.Log("currentLevelIndex = " + currentLevelIndex);
 
->>>>>>> Stashed changes
 
         //PlayerPrefs.Save();
 

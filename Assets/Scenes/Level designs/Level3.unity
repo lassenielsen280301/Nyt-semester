@@ -199,8 +199,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExitManager
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
+
     - target: {fileID: 7572601168864365224, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
       propertyPath: nextSceneName
       value: Level4
@@ -241,7 +240,7 @@ PrefabInstance:
       propertyPath: levelNumber
       value: 3
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
+
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1861059822309981425, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}

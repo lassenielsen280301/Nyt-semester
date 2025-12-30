@@ -2675,8 +2675,7 @@ PrefabInstance:
       propertyPath: nextSceneName
       value: Level9
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
+
     - target: {fileID: 7566936879442843971, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       propertyPath: circleExit
       value: 
@@ -2713,7 +2712,7 @@ PrefabInstance:
       propertyPath: currentLevelIndex
       value: 7
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
+
     - target: {fileID: 8958871421848464517, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.58
@@ -2753,7 +2752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ccf076da0a3d94bb51ea7f3ccaf168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
+
   circlePlayer: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
   squarePlayer: {fileID: 4047835749934991700, guid: 31817f468f9cc9840a322c5be60ec6a5, type: 3}
   circleExit: {fileID: 1478588352}
@@ -2762,7 +2761,7 @@ MonoBehaviour:
   squareInside: 0
   nextSceneName: Level9
   currentLevelIndex: 0
-=======
+
 --- !u!114 &1428737524 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9197738079671783283, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
@@ -2774,7 +2773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9add45ff2a1416b87bc53487407965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> Stashed changes
+
 --- !u!1001 &1436500759
 PrefabInstance:
   m_ObjectHideFlags: 0

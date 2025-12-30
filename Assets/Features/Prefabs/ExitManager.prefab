@@ -44,12 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1fb5706a493b048a061cfa976018e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
+
   circlePlayer: {fileID: 0}
   squarePlayer: {fileID: 0}
   circleExit: {fileID: 3478111101077626395, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
   squareExit: {fileID: 5664901613896713587, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
-=======
+
   exitManager: {fileID: 8391955547282107375}
 --- !u!114 &9007941580184444006
 MonoBehaviour:
@@ -81,7 +81,7 @@ MonoBehaviour:
   squarePlayer: {fileID: 4047835749934991700, guid: 31817f468f9cc9840a322c5be60ec6a5, type: 3}
   circleExit: {fileID: 753786109507358108}
   squareExit: {fileID: 7911263812251041721}
->>>>>>> Stashed changes
+
   circleInside: 0
   squareInside: 0
   nextSceneName: Scene 4

@@ -3992,8 +3992,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExitManager
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
+
     - target: {fileID: 7572601168864365224, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
       propertyPath: levelComplete
       value: 
@@ -4010,7 +4009,7 @@ PrefabInstance:
       propertyPath: currentLevelIndex
       value: 4
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
+
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4028,13 +4027,13 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2057490546}
   m_SourcePrefab: {fileID: 100100000, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
-<<<<<<< Updated upstream
+
 --- !u!1 &1876663499 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5352079187958127598, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
   m_PrefabInstance: {fileID: 1876663498}
   m_PrefabAsset: {fileID: 0}
-=======
+
 --- !u!114 &1876663499 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9007941580184444006, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
@@ -4159,7 +4158,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc4b10ffa0dc04321a758a80ae0488e7, type: 3}
->>>>>>> Stashed changes
+
 --- !u!1 &1885100208
 GameObject:
   m_ObjectHideFlags: 0
