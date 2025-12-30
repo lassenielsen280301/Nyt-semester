@@ -25,7 +25,7 @@ public class KillZone : MonoBehaviour
 
          void Dead()
         {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 }
 

@@ -2,6 +2,10 @@
 
 public class MovingPlatform : MonoBehaviour
 {
+    [Header("Audio Settings")]
+    public AudioSource movingAudio;   // Loop lyd, når elevatoren bevæger sig
+    public AudioClip stopSound;       // Kort lyd, når elevatoren stopper
+
     [Header("Movement Settings")]
     public Transform targetPosition;    // Horizontal destination
     public float downDistance = 3f;     // How far down it drops
@@ -20,9 +24,12 @@ public class MovingPlatform : MonoBehaviour
     private float waitTimer = 0f;
     private float waitTopTimer = 0f;    //hej
     private int nextStepAfterTop = 0; //hej
-
+    private bool isMoving = false;
 
     private Vector3 lastPosition;
+
+
+
 
     void Start()
     {
@@ -37,6 +44,23 @@ public class MovingPlatform : MonoBehaviour
 
     void Update()
     {
+        bool currentlyMoving = (transform.position - lastPosition).sqrMagnitude > 0.0001f;
+
+        if (currentlyMoving && !isMoving)
+        {
+            // Elevator begyndte at bevæge sig
+            isMoving = true;
+            movingAudio.Play();
+        }
+        else if (!currentlyMoving && isMoving)
+        {
+            // Elevator stoppede
+            isMoving = false;
+            movingAudio.Stop();
+            movingAudio.PlayOneShot(stopSound);
+        }
+
+
         if (!activated || targetPosition == null) return;
 
         Vector3 oldPos = transform.position;
