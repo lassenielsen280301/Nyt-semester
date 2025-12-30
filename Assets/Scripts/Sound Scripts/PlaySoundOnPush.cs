@@ -56,7 +56,7 @@ public class PlaySoundOnPush : MonoBehaviour
     {
         if (!canPlaySound) return;
 
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Square"))
         {
             playerIsPushing = true;
         }
