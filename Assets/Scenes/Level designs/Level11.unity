@@ -3557,7 +3557,7 @@ PrefabInstance:
     - target: {fileID: 5991493135086262575, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: squareExit
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2090703628}
     - target: {fileID: 5991493135086262575, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: exitManager
       value: 
@@ -3569,7 +3569,7 @@ PrefabInstance:
     - target: {fileID: 5991493135086262575, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: squarePlayer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4047835749934991700, guid: 31817f468f9cc9840a322c5be60ec6a5, type: 3}
     - target: {fileID: 5991493135086262575, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: nextSceneName
       value: LevelSelect
@@ -6372,6 +6372,10 @@ PrefabInstance:
     - target: {fileID: 8391955547282107375, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
       propertyPath: currentLevelIndex
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9007941580184444006, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: levelNumber
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -10302,7 +10306,7 @@ PrefabInstance:
     - target: {fileID: 5256499751350792348, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
       propertyPath: circleExit
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 596553330}
     - target: {fileID: 5256499751350792348, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
       propertyPath: squareExit
       value: 
@@ -10314,7 +10318,7 @@ PrefabInstance:
     - target: {fileID: 5256499751350792348, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
       propertyPath: circlePlayer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
     - target: {fileID: 5256499751350792348, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
       propertyPath: squarePlayer
       value: 
