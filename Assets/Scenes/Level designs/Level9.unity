@@ -1095,6 +1095,14 @@ PrefabInstance:
       propertyPath: targetPosition
       value: 
       objectReference: {fileID: 1026557248}
+    - target: {fileID: 4621914741712513743, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4621914741712513743, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5147406445930251366, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: downDistance
       value: 4.8
@@ -8963,7 +8971,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1682932670308684834, guid: bbf5a3fdaa1f349a29c8151ba80ba47c, type: 3}
       propertyPath: m_text
-      value: '"Press L-Shift"'
+      value: '"Press R-Shift"'
       objectReference: {fileID: 0}
     - target: {fileID: 3387807337931324748, guid: bbf5a3fdaa1f349a29c8151ba80ba47c, type: 3}
       propertyPath: m_Pivot.x
@@ -9047,7 +9055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6284006026708833384, guid: bbf5a3fdaa1f349a29c8151ba80ba47c, type: 3}
       propertyPath: m_Name
-      value: PressLShift
+      value: PressRShift
       objectReference: {fileID: 0}
     - target: {fileID: 6284006026708833384, guid: bbf5a3fdaa1f349a29c8151ba80ba47c, type: 3}
       propertyPath: m_IsActive

@@ -2,9 +2,6 @@
 
 public class MovingPlatform : MonoBehaviour
 {
-    [Header("Audio Settings")]
-    public AudioSource movingAudio;   // Loop lyd, når elevatoren bevæger sig
-    public AudioClip stopSound;       // Kort lyd, når elevatoren stopper
 
     [Header("Movement Settings")]
     public Transform targetPosition;    // Horizontal destination
@@ -24,7 +21,10 @@ public class MovingPlatform : MonoBehaviour
     private float waitTimer = 0f;
     private float waitTopTimer = 0f;    //hej
     private int nextStepAfterTop = 0; //hej
+
     private bool isMoving = false;
+
+    private bool soundsStarted = false;
 
     private Vector3 lastPosition;
 
@@ -42,25 +42,36 @@ public class MovingPlatform : MonoBehaviour
         lastPosition = transform.position;
     }
 
-    void Update()
+    //populate these from the Inspector
+    public AudioSource startSound;
+    public AudioSource runSound;
+    public AudioSource stopSound;
+
+    //call this when the elevator starts moving
+    void StartElevatorSounds()
     {
-        bool currentlyMoving = (transform.position - lastPosition).sqrMagnitude > 0.0001f;
+        startSound.Play();
+        runSound.Play(); //assumes this AudioSource has 'isLooping" set
+    }
 
-        if (currentlyMoving && !isMoving)
-        {
-            // Elevator begyndte at bevæge sig
-            isMoving = true;
-            movingAudio.Play();
-        }
-        else if (!currentlyMoving && isMoving)
-        {
-            // Elevator stoppede
-            isMoving = false;
-            movingAudio.Stop();
-            movingAudio.PlayOneShot(stopSound);
-        }
+    //call this when it stops
+    void StopElevatorSounds()
+    {
+        runSound.Stop();
+        stopSound.Play();
+    }
+
+    void StopAllElevatorSounds()
+    {
+        if (startSound != null) startSound.Stop();
+        if (runSound != null) runSound.Stop();
+        soundsStarted = false;
+    }
 
 
+void Update()
+    {
+        
         if (!activated || targetPosition == null) return;
 
         Vector3 oldPos = transform.position;
@@ -68,6 +79,11 @@ public class MovingPlatform : MonoBehaviour
         switch (step)
         {
             case 0: // Move start → target
+                if (!soundsStarted)
+                {
+                    StartElevatorSounds();
+                    soundsStarted = true;
+                }
                 MoveTowards(targetPosition.position, 1);
                 break;
 
@@ -81,6 +97,7 @@ public class MovingPlatform : MonoBehaviour
                 break;
 
             case 1: // Move target → down
+
                 MoveTowards(downPosition, 2);
                 break;
 
@@ -102,10 +119,14 @@ public class MovingPlatform : MonoBehaviour
                 break;
 
             case -1: // Finished
+                StopElevatorSounds();
+                StopAllElevatorSounds();
                 activated = false;
                 step = 0;
                 break;
         }
+
+        
 
         // Apply platform movement delta to any players on top
         Vector3 delta = transform.position - lastPosition;
@@ -113,6 +134,8 @@ public class MovingPlatform : MonoBehaviour
 
         lastPosition = transform.position;
     }
+
+    
 
     private void MoveTowards(Vector3 destination, int nextStep)
     {
