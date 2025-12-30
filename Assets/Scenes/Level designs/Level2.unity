@@ -2620,6 +2620,10 @@ PrefabInstance:
       propertyPath: nextSceneName
       value: Level3
       objectReference: {fileID: 0}
+    - target: {fileID: 4093037461429143845, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: currentLevelIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4481476815343204811, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       propertyPath: circleExit
       value: 
@@ -2639,6 +2643,10 @@ PrefabInstance:
     - target: {fileID: 4481476815343204811, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       propertyPath: nextSceneName
       value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481476815343204811, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: currentLevelIndex
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5004557344993046552, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2679,6 +2687,30 @@ PrefabInstance:
     - target: {fileID: 6468723725852674524, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       propertyPath: nextSceneName
       value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566936879442843971, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: nextSceneName
+      value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566936879442843971, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: currentLevelIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7759989737769179581, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: nextSceneName
+      value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7759989737769179581, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: currentLevelIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8561477249837611258, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: nextSceneName
+      value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8561477249837611258, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: currentLevelIndex
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8958871421848464517, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2764,7 +2796,7 @@ MonoBehaviour:
   circleInside: 0
   squareInside: 0
   nextSceneName: Level3
-  currentLevelIndex: 0
+  currentLevelIndex: 2
 --- !u!1 &2091881070 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8537989389306378990, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}

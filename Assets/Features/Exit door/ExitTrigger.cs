@@ -35,6 +35,8 @@ public class ExitManager : MonoBehaviour
             
         );
         Debug.Log("UnlockedLevel is now: " + PlayerPrefs.GetInt("UnlockedLevel", -1));
+        Debug.Log("currentLevelIndex = " + currentLevelIndex);
+
 
         PlayerPrefs.Save();
 
