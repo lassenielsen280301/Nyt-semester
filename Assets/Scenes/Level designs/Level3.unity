@@ -199,6 +199,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExitManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7572601168864365224, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: nextSceneName
+      value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7572601168864365224, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: currentLevelIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756716060527069782, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: nextSceneName
+      value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756716060527069782, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: currentLevelIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391955547282107375, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: nextSceneName
+      value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391955547282107375, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: currentLevelIndex
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -841,6 +865,10 @@ PrefabInstance:
     - target: {fileID: 5991493135086262575, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: nextSceneName
       value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5991493135086262575, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
+      propertyPath: currentLevelIndex
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8622997026814545124, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4919,6 +4947,10 @@ PrefabInstance:
     - target: {fileID: 5256499751350792348, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
       propertyPath: nextSceneName
       value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256499751350792348, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
+      propertyPath: currentLevelIndex
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -2856,6 +2856,10 @@ PrefabInstance:
       propertyPath: nextSceneName
       value: Level10
       objectReference: {fileID: 0}
+    - target: {fileID: 5991493135086262575, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
+      propertyPath: currentLevelIndex
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8622997026814545124, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.32853
@@ -5445,6 +5449,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExitManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7572601168864365224, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: nextSceneName
+      value: Level10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7572601168864365224, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: currentLevelIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756716060527069782, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: nextSceneName
+      value: Level10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756716060527069782, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: currentLevelIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391955547282107375, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: nextSceneName
+      value: Level10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391955547282107375, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
+      propertyPath: currentLevelIndex
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5515,6 +5543,7 @@ MonoBehaviour:
   circleInside: 0
   squareInside: 0
   nextSceneName: Level10
+  currentLevelIndex: 8
 --- !u!1001 &1238295049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6532,6 +6561,10 @@ PrefabInstance:
     - target: {fileID: 5256499751350792348, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
       propertyPath: nextSceneName
       value: Level10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5256499751350792348, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
+      propertyPath: currentLevelIndex
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
