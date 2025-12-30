@@ -1032,6 +1032,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 1930720784897450170, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2552346687512714186, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
       propertyPath: m_Name
       value: Box
@@ -1555,7 +1559,8 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.39426565
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8413297891523485439, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1624,7 +1629,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955054226}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cca65249c0354a7458157c716c132bfd, type: 3}
@@ -1907,7 +1912,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5092437120900260926, guid: 54e7c8eb94cd8492492e63fb3e795863, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3783,44 +3789,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8179556473045104346, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
   m_PrefabInstance: {fileID: 716286996}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2057490544 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1046539283123453657, guid: 75bdf7203df48a5428d94ccdb19f43eb, type: 3}
-  m_PrefabInstance: {fileID: 1876663498}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2057490545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876663499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa9add45ff2a1416b87bc53487407965, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelNumber: 4
---- !u!114 &2057490546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876663499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2ccf076da0a3d94bb51ea7f3ccaf168, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circlePlayer: {fileID: 4985921580286160361, guid: 2b873ca49e02a374bbe42b490bf4b784, type: 3}
-  squarePlayer: {fileID: 4047835749934991700, guid: 31817f468f9cc9840a322c5be60ec6a5, type: 3}
-  circleExit: {fileID: 1279606130}
-  squareExit: {fileID: 1849052282}
-  circleInside: 0
-  squareInside: 0
-  nextSceneName: Level6
-  currentLevelIndex: 0
 --- !u!1 &2058686404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3984,7 +3952,8 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.5159628
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8413297891523485439, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
