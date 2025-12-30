@@ -1,22 +1,34 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class KillPlayer : MonoBehaviour
 {
-    // KillPlayers
-    public GameObject Circle;
-    public GameObject Square;
+    [Header("Global death sound")]
+    public CharacterDeathSound globalDeathSound;
+
+    private bool hasTriggered = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Circle") || collision.gameObject.CompareTag("Square"))
+        if (hasTriggered) return;
+
+        if (collision.CompareTag("Square") || collision.CompareTag("Circle"))
         {
-            Dead();
+            hasTriggered = true;
+            StartCoroutine(HandleDeath());
         }
     }
-    
-    void Dead()
+
+    private IEnumerator HandleDeath()
     {
+
+        if (globalDeathSound != null)
+        {
+            globalDeathSound.PlayDeathSound();
+        }
+
+        yield return null;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
