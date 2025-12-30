@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class ExitManager : MonoBehaviour
 {
     private ExitManager exitManager;
+    public LevelComplete levelComplete;
 
     public GameObject circlePlayer;
     public GameObject squarePlayer;
@@ -15,6 +16,8 @@ public class ExitManager : MonoBehaviour
     public bool squareInside = false;
 
     public string nextSceneName;
+
+
 
     public int currentLevelIndex;
 
@@ -29,14 +32,27 @@ public class ExitManager : MonoBehaviour
       {
         Debug.Log("JUBII");
 
+<<<<<<< Updated upstream
         PlayerPrefs.SetInt(
             "UnlockedLevel",
             Mathf.Max(PlayerPrefs.GetInt("UnlockedLevel", 0), currentLevelIndex + 1)
             
         );
         Debug.Log("UnlockedLevel is now: " + PlayerPrefs.GetInt("UnlockedLevel", -1));
+=======
+            levelComplete.CompleteLevel();
 
-        PlayerPrefs.Save();
+            //PlayerPrefs.SetInt(
+            //  "UnlockedLevel",
+            //Mathf.Max(PlayerPrefs.GetInt("UnlockedLevel", 0), currentLevelIndex + 1)
+
+            //);
+            //Debug.Log("UnlockedLevel is now: " + PlayerPrefs.GetInt("UnlockedLevel", -1));
+        //Debug.Log("currentLevelIndex = " + currentLevelIndex);
+
+>>>>>>> Stashed changes
+
+        //PlayerPrefs.Save();
 
         SceneManager.LoadScene(nextSceneName);
     }
