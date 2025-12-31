@@ -18,6 +18,7 @@ public class ExitManager : MonoBehaviour
 
     public int currentLevelIndex;
 
+
     private void Start()
     {
 
@@ -28,8 +29,9 @@ public class ExitManager : MonoBehaviour
         if (circleInside == true && squareInside == true)
       {
         Debug.Log("JUBII");
+            ExitAudioPlayer.Instance.PlayExitSound();
 
-        PlayerPrefs.SetInt(
+            PlayerPrefs.SetInt(
             "UnlockedLevel",
             Mathf.Max(PlayerPrefs.GetInt("UnlockedLevel", 0), currentLevelIndex + 1)
             
@@ -43,4 +45,6 @@ public class ExitManager : MonoBehaviour
         SceneManager.LoadScene(nextSceneName);
     }
     }
+
+
 }
