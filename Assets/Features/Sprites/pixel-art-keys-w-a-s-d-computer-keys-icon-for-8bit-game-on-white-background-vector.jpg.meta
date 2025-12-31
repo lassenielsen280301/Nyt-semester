@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pixel-art-keys-w-a-s-d-computer-keys-icon-for-8bit-game-on-white-background-vector_0: 7274946753202433902
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
