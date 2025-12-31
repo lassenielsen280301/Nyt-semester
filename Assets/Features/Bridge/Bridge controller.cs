@@ -19,6 +19,10 @@ public class DrawbridgeController2D : MonoBehaviour
     private bool isMoving = false;
     private float currentAngle;
 
+    public AudioSource bridgeSound;
+
+    
+
     void Start()
     {
         if (hingePoint == null)
@@ -38,7 +42,7 @@ public class DrawbridgeController2D : MonoBehaviour
 
         float targetAngle = isActive ? loweredAngle : raisedAngle;
         currentAngle = Mathf.MoveTowards(currentAngle, targetAngle, rotationSpeed * Time.deltaTime);
-
+        PlaySound();
         // Apply rotation
         hingePoint.localRotation = Quaternion.Euler(0f, 0f, currentAngle);
 
@@ -48,6 +52,7 @@ public class DrawbridgeController2D : MonoBehaviour
             currentAngle = targetAngle;
             hingePoint.localRotation = Quaternion.Euler(0f, 0f, targetAngle);
             isMoving = false;
+            StopSound();
         }
     }
 
@@ -59,6 +64,24 @@ public class DrawbridgeController2D : MonoBehaviour
             isMoving = true;
         }
     }
+
+    public void PlaySound()
+    {
+        if (bridgeSound != null && !bridgeSound.isPlaying) 
+        {
+            bridgeSound.Play();
+        }
+    }
+
+    public void StopSound()
+    {
+        if (bridgeSound != null && bridgeSound.isPlaying) 
+        {
+            bridgeSound.Stop();
+        }
+    }
+
+
 }
 
 
