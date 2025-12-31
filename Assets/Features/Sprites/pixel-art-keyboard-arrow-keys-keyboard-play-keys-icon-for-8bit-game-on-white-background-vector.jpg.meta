@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pixel-art-keyboard-arrow-keys-keyboard-play-keys-icon-for-8bit-game-on-white-background-vector_0: 2603704751425979
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
