@@ -8803,6 +8803,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1730091386
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7761915
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815374598492825317, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_Name
+      value: ExitMusic
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e493c144a4d504d884df463b57d182, type: 3}
 --- !u!1 &1732049223 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6284006026708833384, guid: bbf5a3fdaa1f349a29c8151ba80ba47c, type: 3}
@@ -11169,3 +11226,4 @@ SceneRoots:
   - {fileID: 139063036}
   - {fileID: 1380988114}
   - {fileID: 1460317176}
+  - {fileID: 1730091386}
