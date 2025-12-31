@@ -14,6 +14,8 @@ public class LevelTimer : MonoBehaviour
 
     private bool isPaused = false; // Pause flag
 
+    public AudioSource gameOverSound;
+
     void Update()
     {
         // Toggle pause with Escape (only if game hasn't failed yet)
@@ -47,6 +49,7 @@ public class LevelTimer : MonoBehaviour
         hasFailed = true;
         isCounting = false;
 
+        PlayGameOverSound();
         failScreen.alpha = 0;
         failScreen.interactable = true;
         failScreen.blocksRaycasts = true;
@@ -75,6 +78,14 @@ public class LevelTimer : MonoBehaviour
         else
         {
             Time.timeScale = 1f; // Resume game
+        }
+    }
+
+    public void PlayGameOverSound()
+    {
+        if (gameOverSound != null)
+        {
+            gameOverSound.Play();
         }
     }
 }
