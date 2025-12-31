@@ -5244,6 +5244,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd5cf5081caced645851b4eebf657a16, type: 3}
+--- !u!1001 &2021363360
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7761915
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674907993457343388, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7815374598492825317, guid: 19e493c144a4d504d884df463b57d182, type: 3}
+      propertyPath: m_Name
+      value: ExitMusic
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 19e493c144a4d504d884df463b57d182, type: 3}
 --- !u!1 &2037622891
 GameObject:
   m_ObjectHideFlags: 0
@@ -5678,12 +5735,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 683cebc4c0fc75d4a8b2f86fb6662f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boxPrefab: {fileID: 2552346687512714186, guid: 0c64a14274e15c142a5e2fb0ed5301e0, type: 3}
+  boxPrefab: {fileID: 2552346687512714186, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
   spawnPoint: {fileID: 759095681}
   buttonAnimator: {fileID: 0}
   pressTrigger: E
   maxBoxes: 1
-  gravityScale: 3
+  gravityScale: 5
   dropSpeed: 3
   buttonSprite: {fileID: 2078621597}
   normalColor: {r: 0.96862745, g: 0.47058824, b: 0, a: 1}
@@ -6063,3 +6120,4 @@ SceneRoots:
   - {fileID: 1736305065}
   - {fileID: 1238619340}
   - {fileID: 166855130}
+  - {fileID: 2021363360}

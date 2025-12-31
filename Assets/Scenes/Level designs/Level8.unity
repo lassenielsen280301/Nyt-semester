@@ -4088,8 +4088,8 @@ MonoBehaviour:
   buttonAnimator: {fileID: 0}
   pressTrigger: Press
   maxBoxes: 4
-  gravityScale: 1
-  dropSpeed: 1
+  gravityScale: 5
+  dropSpeed: 3
   buttonSprite: {fileID: 1987746339}
   normalColor: {r: 0.9411765, g: 0.5294118, b: 0.15294118, a: 1}
   glowColor: {r: 1, g: 0.7659598, b: 0.051886797, a: 1.3}
