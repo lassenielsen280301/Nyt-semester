@@ -14,6 +14,8 @@ public class TriggerButton : MonoBehaviour
 
     private bool playerInside = false;
 
+    public AudioSource buttonSound;
+
     private void Start()
     {
         // Make sure visuals start off
@@ -28,6 +30,7 @@ public class TriggerButton : MonoBehaviour
     {
         if (playerInside && Input.GetKeyDown(activateKey))
         {
+            PlaySound();
             GameObject[] platforms = GameObject.FindGameObjectsWithTag(targetPlatformTag);
 
             foreach (GameObject platformObj in platforms)
@@ -77,6 +80,15 @@ public class TriggerButton : MonoBehaviour
             Debug.Log("Player left the button zone.");
         }
     }
+
+    public void PlaySound()
+    {
+               if (buttonSound != null && !buttonSound.isPlaying)
+        {
+            buttonSound.Play();
+        }
+    }
+
 }
 
 

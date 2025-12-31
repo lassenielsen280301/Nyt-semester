@@ -29,6 +29,8 @@ public class BoxSpawnerButton : MonoBehaviour
     private bool isAnimating = false;
     private List<GameObject> spawnedBoxes = new List<GameObject>();
 
+    public AudioSource buttonSound;
+
     void Start()
     {
         if (buttonSprite != null)
@@ -42,6 +44,7 @@ public class BoxSpawnerButton : MonoBehaviour
     {
         if (playerInside && Input.GetKeyDown(KeyCode.E) && !isAnimating)
         {
+            PlaySound();
             StartCoroutine(PressButtonRoutine());
         }
     }
@@ -116,6 +119,15 @@ public class BoxSpawnerButton : MonoBehaviour
                 pressText.SetActive(false);
         }
     }
+
+    public void PlaySound()
+    {
+        if (buttonSound != null)
+        {
+            buttonSound.Play();
+        }
+    }
+
 }
 
 
