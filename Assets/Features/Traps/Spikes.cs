@@ -12,6 +12,8 @@ public class Spikes : MonoBehaviour
     public bool startWhenAwake = true;
     public bool useLocalPosition = true;
 
+    public AudioSource spikeSound;
+
     Vector2 startPos;
     Vector2 upPos;
     Coroutine loopCoroutine;
@@ -47,6 +49,7 @@ public class Spikes : MonoBehaviour
         while (true)
         {
             // Spike goes up quickly
+            PlaySound();
             yield return StartCoroutine(MoveSpike(startPos, upPos, upDuration, EaseOutQuad));
             yield return new WaitForSeconds(holdUpTime);
 
@@ -95,4 +98,14 @@ public class Spikes : MonoBehaviour
 
     float EaseOutQuad(float x) => 1 - (1 - x) * (1 - x);
     float EaseInQuad(float x) => x * x;
+
+
+    public void PlaySound()
+    {
+        if (spikeSound != null)
+        {
+            spikeSound.Play();
+        }
+    }
+
 }
