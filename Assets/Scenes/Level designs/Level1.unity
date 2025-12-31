@@ -1467,6 +1467,10 @@ PrefabInstance:
       value: -5.28
       objectReference: {fileID: 0}
     - target: {fileID: 6468723725852674524, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
+      propertyPath: exitType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468723725852674524, guid: d0cd4461bd6324b89a74869758312b3e, type: 3}
       propertyPath: exitManager
       value: 
       objectReference: {fileID: 1032717289}

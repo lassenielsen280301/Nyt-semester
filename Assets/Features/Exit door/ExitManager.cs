@@ -1,10 +1,18 @@
 using UnityEngine;
+using static ExitManager;
 
 public class ExitTrigger : MonoBehaviour
 {
 
     [SerializeField] private ExitManager exitManager;
 
+    public enum ExitType
+    {
+        Circle,
+        Square
+    }
+
+    [SerializeField] private ExitType exitType;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,18 +29,17 @@ public class ExitTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Circle"))
+        if (exitType == ExitType.Circle && collision.CompareTag("Circle"))
         {
             exitManager.circleInside = true;
-            Debug.Log("CIRCLE");
+            Debug.Log("Circle i Circle-dør");
         }
 
-        if (collision.CompareTag("Square"))
+        if (exitType == ExitType.Square && collision.CompareTag("Square"))
         {
             exitManager.squareInside = true;
-            Debug.Log("SQUARE");
+            Debug.Log("Square i Square-dør");
         }
-
 
         exitManager.CheckBothPlayers();
 
@@ -40,16 +47,14 @@ public class ExitTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Circle"))
+        if (exitType == ExitType.Circle && collision.CompareTag("Circle"))
         {
             exitManager.circleInside = false;
-            Debug.Log("Farvel circle");
         }
 
-        if (collision.CompareTag("Square"))
+        if (exitType == ExitType.Square && collision.CompareTag("Square"))
         {
             exitManager.squareInside = false;
-            Debug.Log("Farvel square");
         }
     }
 }

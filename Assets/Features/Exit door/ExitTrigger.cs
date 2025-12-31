@@ -19,13 +19,14 @@ public class ExitManager : MonoBehaviour
     public int currentLevelIndex;
 
 
+
     private void Start()
     {
-
     }
 
     public void CheckBothPlayers()
     {
+
         if (circleInside == true && squareInside == true)
       {
         Debug.Log("JUBII");
@@ -43,7 +44,10 @@ public class ExitManager : MonoBehaviour
         PlayerPrefs.Save();
 
         SceneManager.LoadScene(nextSceneName);
+
+
     }
+
     }
 
 

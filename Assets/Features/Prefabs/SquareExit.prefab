@@ -92,13 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1fb5706a493b048a061cfa976018e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  circlePlayer: {fileID: 0}
-  squarePlayer: {fileID: 0}
-  circleExit: {fileID: 0}
-  squareExit: {fileID: 5664901613896713587}
-  circleInside: 0
-  squareInside: 0
-  nextSceneName: (Test) Lasse
+  exitManager: {fileID: 0}
+  exitType: 1
 --- !u!114 &5256499751350792348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,5 +106,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ccf076da0a3d94bb51ea7f3ccaf168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitManager: {fileID: 0}
-  playerNumber: 2
+  circlePlayer: {fileID: 0}
+  squarePlayer: {fileID: 0}
+  circleExit: {fileID: 0}
+  squareExit: {fileID: 0}
+  circleInside: 0
+  squareInside: 0
+  nextSceneName: 
+  currentLevelIndex: 0

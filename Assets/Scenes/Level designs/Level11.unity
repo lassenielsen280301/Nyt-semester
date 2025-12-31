@@ -10736,6 +10736,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1196798269}
     m_Modifications:
     - target: {fileID: 3024783676907958373, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
+      propertyPath: exitType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024783676907958373, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
       propertyPath: circleExit
       value: 
       objectReference: {fileID: 596553330}

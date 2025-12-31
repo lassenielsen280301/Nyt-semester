@@ -903,9 +903,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 1285314886}
     m_Modifications:
     - target: {fileID: 3024783676907958373, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
+      propertyPath: exitType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024783676907958373, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
       propertyPath: exitManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1285314887}
     - target: {fileID: 3024783676907958373, guid: b088cee96ce13f0449954fc95d11b50f, type: 3}
       propertyPath: nextSceneName
       value: Level7
@@ -1717,7 +1721,7 @@ PrefabInstance:
     - target: {fileID: 5579187604356741396, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: exitManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1285314887}
     - target: {fileID: 5579187604356741396, guid: bbd8e7039ba4e7047a633b5b9c8a623c, type: 3}
       propertyPath: nextSceneName
       value: Level7
@@ -3315,7 +3319,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3762178815264480280, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5513143527433053512, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
       propertyPath: m_Name
@@ -4190,7 +4194,7 @@ MonoBehaviour:
   pressTrigger: E
   maxBoxes: 4
   gravityScale: 2
-  dropSpeed: 3
+  dropSpeed: 1
   buttonSprite: {fileID: 1330846640}
   normalColor: {r: 0.91764706, g: 0.4745098, b: 0.05882353, a: 1}
   glowColor: {r: 1, g: 0.7402892, b: 0, a: 1.3}
@@ -5500,7 +5504,7 @@ Transform:
   m_GameObject: {fileID: 1564034700}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.0068, y: -2.485, z: 9.923359}
+  m_LocalPosition: {x: 5.97, y: -2.69, z: 9.923359}
   m_LocalScale: {x: 2.2026165, y: 0.47854722, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5540,7 +5544,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.016441882}
+  m_Offset: {x: 0, y: -0.2717294}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5550,7 +5554,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.032884}
+  m_Size: {x: 1, y: 1.0869161}
   m_EdgeRadius: 0
 --- !u!114 &1564034704
 MonoBehaviour:
@@ -5868,7 +5872,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3762178815264480280, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5513143527433053512, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
       propertyPath: m_Name
@@ -5876,7 +5880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8179556473045104346, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.76500076
+      value: 0.7668368
       objectReference: {fileID: 0}
     - target: {fileID: 8179556473045104346, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
       propertyPath: m_LocalScale.y
@@ -5884,7 +5888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8179556473045104346, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.917904
+      value: 10.8962
       objectReference: {fileID: 0}
     - target: {fileID: 8179556473045104346, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6731,7 +6735,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3762178815264480280, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5513143527433053512, guid: b95408ecb28104fb98b9b4a6409ffb1d, type: 3}
       propertyPath: m_Name
