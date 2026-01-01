@@ -5740,7 +5740,7 @@ MonoBehaviour:
   buttonAnimator: {fileID: 0}
   pressTrigger: E
   maxBoxes: 1
-  gravityScale: 5
+  gravityScale: 2
   dropSpeed: 3
   buttonSprite: {fileID: 2078621597}
   normalColor: {r: 0.96862745, g: 0.47058824, b: 0, a: 1}
