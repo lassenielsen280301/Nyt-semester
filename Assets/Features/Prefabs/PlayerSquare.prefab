@@ -26,13 +26,13 @@ Transform:
   m_GameObject: {fileID: 2974070836725617676}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.421345, y: -0.012400249, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.22000004, y: 0.2759999, z: -0.524}
+  m_LocalScale: {x: 0.3004197, y: 0.16129461, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6061324636501862170}
   - {fileID: 5205670758594070589}
-  m_Father: {fileID: 1765320773072454469}
+  m_Father: {fileID: 1691422551043036030}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3629458780946194107
 SpriteRenderer:
@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 1571731535937676739}
   - component: {fileID: 1991360545275245588}
   - component: {fileID: 1473695938310260514}
+  - component: {fileID: 1261696780193701220}
   m_Layer: 0
   m_Name: PlayerSquare
   m_TagString: Square
@@ -297,11 +298,12 @@ Transform:
   m_GameObject: {fileID: 4047835749934991700}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.7695, y: 1.9081, z: -2.13}
+  m_LocalPosition: {x: 5.7695, y: 1.9081, z: 0}
   m_LocalScale: {x: 0.87622494, y: 1.511091, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1765320773072454469}
+  - {fileID: 5130117972985925131}
   - {fileID: 2977476181221369694}
   - {fileID: 1648364238836820983}
   - {fileID: 1332479140464958661}
@@ -648,6 +650,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1261696780193701220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4047835749934991700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5348869a039f640b274bf677f30ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftPupil: {fileID: 7080486452792389476}
+  rightPupil: {fileID: 6061324636501862170}
+  maxOffset: 0.08
+  followSpeed: 10
 --- !u!1 &4479983091881858074
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +784,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7080486452792389476}
-  - {fileID: 5130117972985925131}
   m_Father: {fileID: 1691422551043036030}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5348062007342116735

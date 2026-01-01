@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 3062146030159770197}
   - component: {fileID: 3769178572402877210}
   - component: {fileID: 7334691441873429945}
+  - component: {fileID: 8763048851107540050}
   m_Layer: 0
   m_Name: PlayerCircle
   m_TagString: Circle
@@ -652,6 +653,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8763048851107540050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4985921580286160361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8b62e28dcbc4aa8b8f5cda6ae6319f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftPupil: {fileID: 2984098933001602185}
+  rightPupil: {fileID: 1326854356490828259}
+  maxOffset: 0.08
+  followSpeed: 10
 --- !u!1 &5668695872571742142
 GameObject:
   m_ObjectHideFlags: 0
