@@ -1376,6 +1376,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 293330378543805849, guid: 1c28e4046c15c492892ace2e1f3477e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -168
+      objectReference: {fileID: 0}
     - target: {fileID: 705220816911052641, guid: 1c28e4046c15c492892ace2e1f3477e3, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1463,6 +1467,10 @@ PrefabInstance:
     - target: {fileID: 1838870754217566410, guid: 1c28e4046c15c492892ace2e1f3477e3, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976285635699650123, guid: 1c28e4046c15c492892ace2e1f3477e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -287.71246
       objectReference: {fileID: 0}
     - target: {fileID: 4682316377477010446, guid: 1c28e4046c15c492892ace2e1f3477e3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

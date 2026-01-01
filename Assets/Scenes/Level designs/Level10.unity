@@ -2374,12 +2374,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5391675806487741010, guid: 23d81efb078f94fd0958946f2d2caa79, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0554
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391675806487741010, guid: 23d81efb078f94fd0958946f2d2caa79, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.28
       objectReference: {fileID: 0}
     - target: {fileID: 5391675806487741010, guid: 23d81efb078f94fd0958946f2d2caa79, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.46
+      value: 4.5201
       objectReference: {fileID: 0}
     - target: {fileID: 5391675806487741010, guid: 23d81efb078f94fd0958946f2d2caa79, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3124,7 +3128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6160440417865883315, guid: 216a045d3aa744de58d67928cae9b90a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0013356
+      value: 1.0797637
       objectReference: {fileID: 0}
     - target: {fileID: 6160440417865883315, guid: 216a045d3aa744de58d67928cae9b90a, type: 3}
       propertyPath: m_LocalScale.y
@@ -3132,7 +3136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6160440417865883315, guid: 216a045d3aa744de58d67928cae9b90a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.98
+      value: -7.9798
       objectReference: {fileID: 0}
     - target: {fileID: 6160440417865883315, guid: 216a045d3aa744de58d67928cae9b90a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3369,6 +3373,10 @@ PrefabInstance:
     - target: {fileID: 1067887688680619907, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: m_TagString
       value: PlatformA
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388714298173140871, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4185978209807949485, guid: 1386316ea9d2847a0bae620bb701f0b9, type: 3}
       propertyPath: downDistance
