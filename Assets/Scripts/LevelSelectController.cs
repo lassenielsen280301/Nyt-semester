@@ -45,8 +45,11 @@ public class LevelSelectController : MonoBehaviour
 
         if (levelIndex <= unlockedLevel)
         {
+
             string sceneName = levelSceneNames[levelIndex];
+            Time.timeScale = 1f;
             SceneManager.LoadScene(sceneName);
+
         }
         else
         {
