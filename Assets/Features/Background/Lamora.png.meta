@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lamora_0: 4940578533035681235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
