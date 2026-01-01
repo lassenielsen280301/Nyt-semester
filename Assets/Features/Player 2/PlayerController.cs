@@ -9,22 +9,24 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 5f;
     public bool isJumping;
 
-    // Sprite flipping
     private Transform spriteRoot;
 
     // Audio
     public AudioClip[] jumpSounds;
     public AudioClip walkSound;
 
-    private AudioSource audioSource;
+    private AudioSource walkSource;
+    private AudioSource jumpSource;
     private bool isWalkingSoundPlaying;
 
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
-
         spriteRoot = GetComponentInChildren<SpriteRenderer>().transform;
-        audioSource = GetComponent<AudioSource>();
+
+        AudioSource[] sources = GetComponents<AudioSource>();
+        walkSource = sources[0];
+        jumpSource = sources[1];
 
         isJumping = false;
         isWalkingSoundPlaying = false;
@@ -49,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
         body.linearVelocity = new Vector2(move * speed, body.linearVelocity.y);
 
-        // Face movement direction
+        // Face direction
         if (move != 0)
         {
             Vector3 scale = spriteRoot.localScale;
@@ -57,14 +59,14 @@ public class PlayerController : MonoBehaviour
             spriteRoot.localScale = scale;
         }
 
-        // ✅ Walking sound ONLY when grounded
+        // Walking sound (grounded only)
         if (Mathf.Abs(move) > 0.01f && !isJumping)
         {
             if (!isWalkingSoundPlaying)
             {
-                audioSource.clip = walkSound;
-                audioSource.loop = true;
-                audioSource.Play();
+                walkSource.clip = walkSound;
+                walkSource.loop = true;
+                walkSource.Play();
                 isWalkingSoundPlaying = true;
             }
         }
@@ -72,8 +74,8 @@ public class PlayerController : MonoBehaviour
         {
             if (isWalkingSoundPlaying)
             {
-                audioSource.Stop();
-                audioSource.loop = false;
+                walkSource.Stop();
+                walkSource.loop = false;
                 isWalkingSoundPlaying = false;
             }
         }
@@ -103,11 +105,10 @@ public class PlayerController : MonoBehaviour
     {
         body.linearVelocity = new Vector2(body.linearVelocity.x, jumpForce);
 
-        // Random jump sound
         if (jumpSounds.Length > 0)
         {
             int randomIndex = Random.Range(0, jumpSounds.Length);
-            audioSource.PlayOneShot(jumpSounds[randomIndex]);
+            jumpSource.PlayOneShot(jumpSounds[randomIndex]);
         }
     }
 }
