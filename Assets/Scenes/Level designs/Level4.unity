@@ -263,6 +263,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d74c7b84dec14b44af8d4eda3e7d3b9, type: 3}
+--- !u!82 &52123475 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8693691774110556202, guid: 5d74c7b84dec14b44af8d4eda3e7d3b9, type: 3}
+  m_PrefabInstance: {fileID: 52123474}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &76680822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1428,9 +1433,17 @@ PrefabInstance:
       value: Box
       objectReference: {fileID: 0}
     - target: {fileID: 6099047811193952172, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 52123475}
+    - target: {fileID: 6099047811193952172, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
       propertyPath: boxRigidbody
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6638404071322098852, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 52123475}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

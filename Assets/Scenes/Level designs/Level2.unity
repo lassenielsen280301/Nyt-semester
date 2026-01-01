@@ -1117,6 +1117,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6099047811193952172, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 1385452267}
+    - target: {fileID: 6638404071322098852, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 1385452267}
     - target: {fileID: 6712201153568579588, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
       propertyPath: m_Size.x
       value: 1.0012686
@@ -3292,6 +3300,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc4b10ffa0dc04321a758a80ae0488e7, type: 3}
+--- !u!82 &1385452267 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8693691774110556202, guid: 5d74c7b84dec14b44af8d4eda3e7d3b9, type: 3}
+  m_PrefabInstance: {fileID: 9028763612560746688}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1385931709 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 915193239978732027, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
@@ -3582,6 +3595,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6099047811193952172, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 1385452267}
+    - target: {fileID: 6638404071322098852, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 1385452267}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3783,6 +3804,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6099047811193952172, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 1385452267}
+    - target: {fileID: 6638404071322098852, guid: b3c176e9d971b5942843a9eb11dcca2b, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 1385452267}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
